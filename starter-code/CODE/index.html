@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Frontend Mentor | Password generator app</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="icon" type="image" href="../assets/images/4001033.png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="main-container">
+      <section class="sctn-one">
+        <h3 id="passTitle">Password Generator</h3>
+        <div class="box1">
+          <h1 class="password">Your Password</h1>
+          <div class="copy-container">
+            <span class="copy-alert">COPIED</span>
+            <span class="copy-icon">
+              <button class="btn-one">
+                <img src="../assets/images/icon-copy.svg" alt="copy" />
+              </button>
+            </span>
+          </div>
+        </div>
+      </section>
+      <section class="sctn-two">
+        <div class="sliderText">
+          <h3 class="char-text">Character length</h3>
+          <h3 class="char-text char-length">10</h3>
+        </div>
+        <div class="slide-container">
+          <form>
+            <input
+              type="range"
+              id="range"
+              class="slider"
+              name="mySlider"
+              min="5"
+              max="20"
+              value="10"
+            />
+          </form>
+        </div>
+        <form class="chk-panel" id="passwordGeneratorForm">
+          <div class="chk">
+            <input type="checkbox" id="chk1" class="checkbox" />
+            <label for="chk1">Include Uppercase Letters</label>
+          </div>
+          <div class="chk">
+            <input type="checkbox" id="chk2" class="checkbox" />
+            <label for="chk2">Include Lowercase Letters</label>
+          </div>
+          <div class="chk">
+            <input type="checkbox" id="chk3" class="checkbox" />
+            <label for="chk3" class="">Include Numbers</label>
+          </div>
+          <div class="chk">
+            <input type="checkbox" id="chk4" class="checkbox" />
+            <label for="chk4">Include Symbols</label>
+          </div>
+          <div class="str-panel">
+            <div class="strength">
+              <h2>Strength</h2>
+              <div class="indicator-pos">
+                <p class="indicator-value">Weak</p>
+                <div class="strength-value">
+                  <div class="value" id="value1"></div>
+                  <div class="value" id="value2"></div>
+                  <div class="value" id="value3"></div>
+                  <div class="value" id="value4"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="generate">
+            <button class="generator">Generate ➔</button>
+          </div>
+        </form>
+      </section>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
